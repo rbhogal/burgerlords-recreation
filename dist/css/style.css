@@ -1,0 +1,74 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}
+
+h1 {
+  font-family: futura-pt-bold, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.header {
+  font-family: futura-pt-bold, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 3vw;
+  padding: 3vw 0;
+}
+
+.header__logo {
+  margin-right: auto;
+}
+
+.header__logo img {
+  max-width: 13.6rem;
+}
+
+.header__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__links li {
+  list-style: none;
+  padding: 0 .8vw;
+}
+
+.header__links li:last-child {
+  padding-left: 0.8vw;
+  padding-right: 0;
+}
+
+.header__links a {
+  text-decoration: none;
+  color: black;
+}
+/*# sourceMappingURL=style.css.map */
