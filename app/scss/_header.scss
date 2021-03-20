@@ -1,13 +1,16 @@
 .header {
-    font-family: futura-pt-bold, sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    text-transform: uppercase;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin: 0 3vw;
-    padding: 3vw 0;
+  font-family: futura-pt-bold, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+
+  text-transform: uppercase;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0 3vw;
+  padding: 3vw 0;
+  position: relative;
+  z-index: 2;
 
   &__logo {
     margin-right: auto;
@@ -19,21 +22,24 @@
 
   &__links {
     display: flex;
+    font-size: 1.4rem;
 
     & li {
       list-style: none;
-      padding: 0 .8vw;
+      padding: 0 0.8vw;
+      text-shadow: 1px 1px 2rem black;
+
 
       &:last-child {
         padding-left: 0.8vw;
         padding-right: 0;
       }
-
     }
 
     & a {
       text-decoration: none;
       color: black;
+      color: white;
 
     }
   }

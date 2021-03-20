@@ -1,0 +1,55 @@
+.hero {
+  text-transform: uppercase;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__content {
+    text-align: center;
+    position: absolute;
+    z-index: 1;
+    color: white;
+    
+  }
+  h1 {
+    font-size: 8.8rem;
+    padding-top: 1vw;
+    padding-bottom: 3vw;
+    margin: 0;
+    text-shadow: 1px 1px 6rem black;
+  }
+
+  p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.45rem;
+    letter-spacing: .03em;
+    line-height: 1.3em;
+    margin: 0;
+    text-shadow: 1px 1px 1.2rem black;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  &__bg-image {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    background-image: url('../../images/hero-bg-img.jpg');
+    background-size: cover;
+    background-position: center center;
+  }
+}
