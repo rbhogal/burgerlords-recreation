@@ -79,8 +79,8 @@ h2 {
 .header__links a {
   text-decoration: none;
   color: black;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 
 .header__links a:hover {
@@ -124,6 +124,30 @@ h2 {
   font-size: 8.8rem;
   margin: 0;
   text-shadow: 1px 1px 6rem black;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.hero__header:hover::before {
+  -webkit-animation: fade-out 0.5s ease-in-out forwards;
+          animation: fade-out 0.5s ease-in-out forwards;
+}
+
+.hero__header::after {
+  border-top: 1.5px solid white;
+  content: '';
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 13rem;
+  -webkit-animation: fade-out 0.5s ease-in-out forwards;
+          animation: fade-out 0.5s ease-in-out forwards;
+}
+
+.hero__header:hover::after {
+  -webkit-animation: fade-in 0.5s ease-in-out forwards;
+          animation: fade-in 0.5s ease-in-out forwards;
 }
 
 .hero__subheader {
@@ -179,22 +203,26 @@ h2 {
 }
 
 @-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
   100% {
     opacity: 1;
-    text-shadow: none;
   }
 }
 
 @keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
   100% {
     opacity: 1;
-    text-shadow: none;
   }
 }
 
 .fade-in {
-  -webkit-animation: fade-in .5s ease-in-out forwards;
-          animation: fade-in .5s ease-in-out forwards;
+  -webkit-animation: fade-in 0.5s ease-in-out forwards;
+          animation: fade-in 0.5s ease-in-out forwards;
 }
 
 @-webkit-keyframes fade-out {
@@ -216,8 +244,8 @@ h2 {
 }
 
 .fade-out {
-  -webkit-animation: fade-out .5s ease-in-out forwards;
-          animation: fade-out .5s ease-in-out forwards;
+  -webkit-animation: fade-out 0.5s ease-in-out forwards;
+          animation: fade-out 0.5s ease-in-out forwards;
 }
 
 @-webkit-keyframes hide-shadow {
@@ -233,8 +261,8 @@ h2 {
 }
 
 .hide-shadow {
-  -webkit-animation: hide-shadow .5s ease-in-out forwards;
-          animation: hide-shadow .5s ease-in-out forwards;
+  -webkit-animation: hide-shadow 0.5s ease-in-out forwards;
+          animation: hide-shadow 0.5s ease-in-out forwards;
 }
 
 @-webkit-keyframes show-shadow-header {
@@ -256,8 +284,8 @@ h2 {
 }
 
 .show-shadow-header {
-  -webkit-animation: show-shadow-header .5s ease-in-out forwards;
-          animation: show-shadow-header .5s ease-in-out forwards;
+  -webkit-animation: show-shadow-header 0.5s ease-in-out forwards;
+          animation: show-shadow-header 0.5s ease-in-out forwards;
 }
 
 @-webkit-keyframes show-shadow-subheader {
@@ -279,7 +307,7 @@ h2 {
 }
 
 .show-shadow-subheader {
-  -webkit-animation: show-shadow-subheader .5s ease-in-out forwards;
-          animation: show-shadow-subheader .5s ease-in-out forwards;
+  -webkit-animation: show-shadow-subheader 0.5s ease-in-out forwards;
+          animation: show-shadow-subheader 0.5s ease-in-out forwards;
 }
 /*# sourceMappingURL=style.css.map */

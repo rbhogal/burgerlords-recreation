@@ -18,6 +18,7 @@ order.addEventListener('mouseover', () => {
   // Add classes
   bgOverlay.classList.add('fade-in');
   order.classList.add('hide-shadow');
+  order.classList.add('hero__header--underline');
   subHeading.classList.add('hide-shadow');
 });
 
