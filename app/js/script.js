@@ -51,6 +51,7 @@ btnHamburger.addEventListener('click', () => {
     overlay.classList.remove('fade-in-menu');
     overlay.classList.add('fade-out-menu');
     logo.classList.remove('fade-in-menu');
+    logo.classList.remove('fade-in-home');
     logoImg.src ='../../images/burgerlords_oval.png';
     headerLinks.classList.remove('fade-in-links');
     headerLinks.classList.add('fade-out-links');
