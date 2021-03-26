@@ -1,3 +1,6 @@
+////////////////////////////////////////////////////
+// ORDER NOW HOVER 
+
 @keyframes fade-in {
   0% {
     opacity: 0;
@@ -8,7 +11,7 @@
 }
 
 .fade-in {
-  animation: fade-in 0.5s ease-in-out forwards;
+  animation: fade-in 0.2s ease-in-out forwards;
 }
 
 @keyframes fade-out {
@@ -22,7 +25,7 @@
 }
 
 .fade-out {
-  animation: fade-out 0.5s ease-in-out forwards;
+  animation: fade-out 0.2s ease-in-out forwards;
 }
 
 @keyframes hide-shadow {
@@ -32,7 +35,7 @@
 }
 
 .hide-shadow {
-  animation: hide-shadow 0.5s ease-in-out forwards;
+  animation: hide-shadow 0.2s ease-in-out forwards;
 }
 
 @keyframes show-shadow-header {
@@ -46,7 +49,7 @@
 }
 
 .show-shadow-header {
-  animation: show-shadow-header 0.5s ease-in-out forwards;
+  animation: show-shadow-header 0.2s ease-in-out forwards;
 }
 
 @keyframes show-shadow-subheader {
@@ -60,5 +63,51 @@
 }
 
 .show-shadow-subheader {
-  animation: show-shadow-subheader 0.5s ease-in-out forwards;
+  animation: show-shadow-subheader 0.2s ease-in-out forwards;
 }
+
+////////////////////////////////////////////////////
+// HAMBURGER MENU
+
+@keyframes fade-in-menu {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.fade-in-menu {
+  animation: fade-in-menu 0.2s ease-in-out forwards;
+}
+
+.fade-in-menu-delay {
+  animation: fade-in-menu-delay 0.5s ease-in-out forwards;
+
+}
+
+@keyframes fade-out-menu {
+  0% {
+    visibility: visible;
+    opacity: 1;
+  }
+  100% {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+.fade-out-menu {
+  animation: fade-out-menu 0.2s ease-in-out forwards;
+}
+.fade-out-menu-delay {
+  animation: fade-out-menu-delay 0.5s ease-in-out forwards;
+}
+
+
+
+
+

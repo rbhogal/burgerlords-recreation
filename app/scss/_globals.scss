@@ -4,6 +4,9 @@
   box-sizing: inherit;
 }
 
+// Breakpoints
+$medium: 37.5em; // 600px
+
 html {
   font-size: 62.5%; // 62.% = 10px
   box-sizing: border-box;
@@ -15,6 +18,10 @@ body {
   margin: 0;
   font-family: Arial, Arial, Helvetica, sans-serif;
   font-weight: 400;
+
+  &.scroll-lock{
+    overflow: hidden;
+  }
 
 }
 

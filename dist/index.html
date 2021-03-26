@@ -7,21 +7,51 @@
     <title>Burgerlords</title>
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="https://use.typekit.net/fla0tiu.css" />
-    <script src="script.js" defer></script>
+    <script src="../app/js/script.js" defer></script>
   </head>
   <body>
     <header class="header">
+      <div class="header__overlay">
+        <div class="header__menu">
+          <div class="header__menu--menu">
+            <a href="#" >Menu</a>
+          </div>
+          <div class="header__menu--goldbelly">
+            <a href="#" >Goldbelly</a>
+          </div>
+          <div class="header__menu--story">
+            <a href="#" >Story</a>
+          </div>
+          <div class="header__menu--gallery">
+            <a href="#" >Gallery</a>
+          </div>
+          <div class="header__menu--faq">
+            <a href="#" >faq</a>
+          </div>
+          <div class="header__menu--newsletter">
+            <a href="#" >Newsletter</a>
+          </div>
+        </div>
+      </div>
       <a href="#" class="header__logo"
-        ><img src="../images/burgerlords_oval.png" alt="burgerlords logo"
+        ><img
+          id="logo-img"
+          src="../images/burgerlords_oval.png"
+          alt="burgerlords logo"
       /></a>
       <nav>
+        <a href="#" class="header__hamburger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
         <ul class="header__links">
           <li><a href="#">Menu</a></li>
           <li><a href="">Goldbelly</a></li>
           <li><a href="">Story</a></li>
           <li><a href="">Gallery</a></li>
           <li><a href="">FAQ</a></li>
-          <li><a href="">Mailer</a></li>
+          <li><a href="">Newsletter</a></li>
         </ul>
       </nav>
     </header>
@@ -32,9 +62,10 @@
       <div class="hero__content">
         <p class="hero__subheader">100% vegan burger bestaurant.</p>
         <div class="hero__content--container">
-          <a href="#"><h1 class="hero__header" id='hero-header'>Order now</h1></a>
+          <a href="#"
+            ><h1 class="hero__header" id="hero-header">Order now</h1></a
+          >
         </div>
-        
       </div>
     </section>
   </body>
