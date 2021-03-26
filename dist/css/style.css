@@ -476,9 +476,9 @@ h2 {
           animation: fade-in-menu 0.2s ease-in-out forwards;
 }
 
-.fade-in-menu-delay {
-  -webkit-animation: fade-in-menu-delay 0.5s ease-in-out forwards;
-          animation: fade-in-menu-delay 0.5s ease-in-out forwards;
+.fade-in-links {
+  -webkit-animation: fade-in-menu 0.8s ease-in-out forwards;
+          animation: fade-in-menu 0.8s ease-in-out forwards;
 }
 
 @-webkit-keyframes fade-out-menu {
@@ -508,8 +508,8 @@ h2 {
           animation: fade-out-menu 0.2s ease-in-out forwards;
 }
 
-.fade-out-menu-delay {
-  -webkit-animation: fade-out-menu-delay 0.5s ease-in-out forwards;
-          animation: fade-out-menu-delay 0.5s ease-in-out forwards;
+.fade-out-links {
+  -webkit-animation: fade-out-menu 0.5s ease-in-out forwards;
+          animation: fade-out-menu 0.5s ease-in-out forwards;
 }
 /*# sourceMappingURL=style.css.map */

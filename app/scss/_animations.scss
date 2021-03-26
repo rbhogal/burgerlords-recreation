@@ -84,8 +84,8 @@
   animation: fade-in-menu 0.2s ease-in-out forwards;
 }
 
-.fade-in-menu-delay {
-  animation: fade-in-menu-delay 0.5s ease-in-out forwards;
+.fade-in-links {
+  animation: fade-in-menu 0.8s ease-in-out forwards;
 
 }
 
@@ -103,9 +103,11 @@
 .fade-out-menu {
   animation: fade-out-menu 0.2s ease-in-out forwards;
 }
-.fade-out-menu-delay {
-  animation: fade-out-menu-delay 0.5s ease-in-out forwards;
+.fade-out-links {
+  animation: fade-out-menu 0.5s ease-in-out forwards;
 }
+
+
 
 
 

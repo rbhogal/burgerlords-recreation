@@ -50,9 +50,10 @@ btnHamburger.addEventListener('click', () => {
     header.classList.remove('open');
     overlay.classList.remove('fade-in-menu');
     overlay.classList.add('fade-out-menu');
+    logo.classList.remove('fade-in-links');
     logoImg.src ='../../images/burgerlords_oval.png';
-    headerLinks.classList.remove('fade-in-menu');
-    headerLinks.classList.add('fade-out-menu');
+    headerLinks.classList.remove('fade-in-links');
+    headerLinks.classList.add('fade-out-links');
 
     return;
   }
@@ -62,10 +63,10 @@ btnHamburger.addEventListener('click', () => {
   overlay.classList.add('fade-in-menu');
   overlay.classList.remove('fade-out-menu');
 
-  logo.classList.add('fade-in-menu');
+  logo.classList.add('fade-in-links');
 
   logoImg.src = '../../images/burgerlords_oval_white.png';
 
-  headerLinks.classList.add('fade-in-menu');
-  headerLinks.classList.remove('fade-out-menu');  
+  headerLinks.classList.add('fade-in-links');
+  headerLinks.classList.remove('fade-out-links');  
 });
