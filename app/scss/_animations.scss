@@ -14,6 +14,10 @@
   animation: fade-in 0.2s ease-in-out forwards;
 }
 
+.fade-in-home {
+  animation: fade-in 1s ease-in-out forwards;
+}
+
 @keyframes fade-out {
   from {
     opacity: 1;
@@ -84,11 +88,6 @@
   animation: fade-in-menu 0.2s ease-in-out forwards;
 }
 
-.fade-in-links {
-  animation: fade-in-menu 0.8s ease-in-out forwards;
-
-}
-
 @keyframes fade-out-menu {
   0% {
     visibility: visible;
@@ -103,9 +102,29 @@
 .fade-out-menu {
   animation: fade-out-menu 0.2s ease-in-out forwards;
 }
+
 .fade-out-links {
   animation: fade-out-menu 0.5s ease-in-out forwards;
 }
+
+@keyframes fade-in-links {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+.fade-in-links {
+  animation: fade-in-links 1s ease-in-out forwards;
+
+}
+
 
 
 

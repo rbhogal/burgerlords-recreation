@@ -40,6 +40,10 @@
       bottom: 0;
       top: 13rem;
       animation: fade-out 0.2s ease-in-out forwards;
+
+      @media only screen and (max-width: $medium) {
+        display: none;
+      }
     }
 
     &:hover::after {
@@ -56,6 +60,11 @@
     line-height: 1.3em;
     margin: 0;
     text-shadow: 1px 1px 1.2rem black;
+    padding: 0 2.5rem;
+
+    @media only screen and (max-width: $medium) {
+      font-size: 2rem;
+    }
   }
 
   a {
