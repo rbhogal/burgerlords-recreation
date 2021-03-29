@@ -7,14 +7,45 @@
     <title>Menu</title>
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="https://use.typekit.net/fla0tiu.css" />
+    <script src="../app/js/script.js" defer></script>
   </head>
   <body>
     <header class="header">
-      <a href="index.html" class="header__logo"
-        ><img src="../images/burgerlords_oval.png" alt="burgerlords logo"
+      <div class="header__overlay">
+        <div class="header__menu">
+          <div class="header__menu--menu">
+            <a href="menu.html" >Menu</a>
+          </div>
+          <div class="header__menu--goldbelly">
+            <a href="goldbelly.html" >Goldbelly</a>
+          </div>
+          <div class="header__menu--story">
+            <a href="story.html" >Story</a>
+          </div>
+          <div class="header__menu--gallery">
+            <a href="gallery.html" >Gallery</a>
+          </div>
+          <div class="header__menu--faq">
+            <a href="faq.html" >faq</a>
+          </div>
+          <div class="header__menu--newsletter">
+            <a href="newsletter.html" >Newsletter</a>
+          </div>
+        </div>
+      </div>
+      <a href="index.html" class="header__logo fade-in-home"
+        ><img
+          id="logo-img"
+          src="../images/burgerlords_oval.png"
+          alt="burgerlords logo"
       /></a>
       <nav>
-        <ul class="header__links">
+        <a href="#" class="header__hamburger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+        <ul class="header__links fade-in-home">
           <li><a href="menu.html">Menu</a></li>
           <li><a href="goldbelly.html">Goldbelly</a></li>
           <li><a href="story.html">Story</a></li>
@@ -26,10 +57,11 @@
     </header>
 
     <section class="menu">
-      <div class="menu__bg-image"></div>
+      <div class="menu__title-card__overlay"></div>
       <div class="menu__title-card">
-        <p>Our food</p>
+        <h1 class="menu__title">Our food<h1/>
       </div>
+      <strong>MADE OF PLANTS, NOT BASED ON PLANTS</strong>
     </section>
   </body>
 </html>

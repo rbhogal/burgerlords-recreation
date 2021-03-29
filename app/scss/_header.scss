@@ -10,7 +10,7 @@
   margin: 0 3vw;
   padding: 3vw 0;
   position: relative;
-  z-index: 2;
+  z-index: 200;
 
   &__overlay {
     background-color: $burger-sauce;
@@ -67,7 +67,7 @@
     }
   }
 
-  // Hamburger Open Styles
+  // HAMBURGER OPEN STYLES
   &.open {
     .header__hamburger-menu {
       // width: 23.4px;
@@ -118,7 +118,7 @@
     margin-right: auto;
 
     & img {
-      max-width: 13.6rem;
+      max-width: 17rem;
 
       @media only screen and (max-width: $medium) {
         max-width: 11rem;
@@ -128,7 +128,7 @@
 
   &__links {
     display: flex;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
 
     @media only screen and (max-width: $medium) {
       display: none;
