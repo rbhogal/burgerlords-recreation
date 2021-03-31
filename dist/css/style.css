@@ -17,6 +17,8 @@ body {
   margin: 0;
   font-family: Arial, Arial, Helvetica, sans-serif;
   font-weight: 400;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body.scroll-lock {
@@ -27,12 +29,16 @@ h1 {
   font-family: futura-pt-bold, sans-serif;
   font-weight: 700;
   font-style: normal;
+  font-size: 10.8rem;
+  text-transform: uppercase;
+  color: white;
 }
 
 h2 {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 700;
   font-style: normal;
+  text-transform: uppercase;
 }
 
 p {
@@ -252,11 +258,52 @@ p {
           animation: fade-in-links 1s ease-in-out forwards;
 }
 
+@-webkit-keyframes fade-out-scroll {
+  0% {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+  }
+}
+
+@keyframes fade-out-scroll {
+  0% {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+  }
+}
+
+.fade-out-scroll {
+  -webkit-animation: fade-out-scroll 1s ease-in-out forwards;
+          animation: fade-out-scroll 1s ease-in-out forwards;
+}
+
 .header {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 700;
   font-style: normal;
   text-transform: uppercase;
+  margin: 0 3vw;
+  padding: 3vw 0;
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 200;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -266,10 +313,6 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 3vw;
-  padding: 3vw 0;
-  position: relative;
-  z-index: 200;
 }
 
 .header__overlay {
@@ -448,6 +491,11 @@ p {
   text-shadow: 1px 1px 8px black;
 }
 
+.header__links li.active a {
+  color: white;
+  text-shadow: 1px 1px 8px black;
+}
+
 .hero {
   background: #ffa91f;
   text-transform: uppercase;
@@ -508,7 +556,7 @@ p {
   right: 0;
   left: 0;
   bottom: 0;
-  top: 13rem;
+  top: 16rem;
   -webkit-animation: fade-out 0.2s ease-in-out forwards;
           animation: fade-out 0.2s ease-in-out forwards;
 }
@@ -584,18 +632,47 @@ p {
 }
 
 .menu {
-  margin-top: calc(100vh - 20rem);
-  padding: 4.5vw 26rem;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 0;
 }
 
 .menu__title-card {
+  height: 100vh;
   width: 100%;
-  position: absolute;
+  position: relative;
   top: 0;
   right: 0;
   left: 0;
   bottom: 0;
   z-index: 1;
+  background-image: url("../../images/burgerlords-menu-title-card.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+.menu__title-card__overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  height: 100vh;
+}
+
+.menu__title__wrapper {
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -605,14 +682,6 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: url("../../images/burgerlords-menu-title-card.jpg");
-  background-size: cover;
-  background-position: center center;
-}
-
-.menu__title-card__overlay {
-  background-color: rgba(0, 0, 0, 0.2);
-  z-index: 2;
 }
 
 .menu strong {

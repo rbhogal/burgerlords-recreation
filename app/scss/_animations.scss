@@ -1,5 +1,5 @@
 ////////////////////////////////////////////////////
-// ORDER NOW HOVER 
+// ORDER NOW HOVER
 
 @keyframes fade-in {
   0% {
@@ -126,13 +126,24 @@
 
 .fade-in-links {
   animation: fade-in-links 1s ease-in-out forwards;
-
 }
 
+////////////////////////////////////////////////////
+// FADE OUT ON SCROLL
 
+@keyframes fade-out-scroll {
+  0% {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(50px);
+  }
+}
 
-
-
-
-
-
+.fade-out-scroll {
+  animation: fade-out-scroll 1s ease-in-out forwards; 
+}
