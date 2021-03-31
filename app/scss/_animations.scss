@@ -129,7 +129,24 @@
 }
 
 ////////////////////////////////////////////////////
-// FADE OUT ON SCROLL
+// HEADER & TITLE SCROLL ANIMATIONS
+
+@keyframes fade-in-scroll {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-scroll {
+  animation: fade-in-scroll 0.5s ease-in-out forwards;
+}
 
 @keyframes fade-out-scroll {
   0% {
@@ -140,10 +157,10 @@
   100% {
     visibility: hidden;
     opacity: 0;
-    transform: translateY(50px);
+    transform: translateY(-50px);
   }
 }
 
 .fade-out-scroll {
-  animation: fade-out-scroll 1s ease-in-out forwards; 
+  animation: fade-out-scroll 0.5s ease-in-out forwards;
 }

@@ -1,3 +1,5 @@
+'use strict';
+
 //////////////////////////////////////////////////////////////
 // HAMBURGER MENU
 
@@ -44,34 +46,25 @@ btnHamburger.addEventListener('click', () => {
 //////////////////////////////////////////////////////////////
 // HEADER LINKS -- ACTIVE
 
-// Selectors
-navLinks = document.querySelector('.header__links');
-navLink = document.querySelector('.header__link');
-
-// Event Selectors
-navLinks.addEventListener('click', () => {
-  console.log('link');
-  // Remove active class
-  // array.forEach(element => {
-
-  // });
-
-  // Add active class
-  // navLink.classList.add('.active');
-});
-
 //////////////////////////////////////////////////////////////
 // SCROLL ANIMATIONS
 
-// Header animation
-document.addEventListener(
-  'scroll',
-  () => {
-    // header.classList.add('fade-out-scroll');
-  },
-  { passive: true }
-);
+// Header scroll animations 
+let lastScroll = window.scrollY;
 
-// Title card animations
+document.onscroll = function () {
+  // Scroll down
+  if (lastScroll < window.scrollY) {
+    header.classList.remove('fade-in-scroll')
+    header.classList.add('fade-out-scroll');
+    lastScroll = window.scrollY;
+    return;
+  }
 
-// scrollTop
+  // Scroll up
+  if (lastScroll > window.scrollY) {
+    header.classList.remove('fade-out-scroll');
+    header.classList.add('fade-in-scroll');
+    lastScroll = window.scrollY;
+  }
+};
