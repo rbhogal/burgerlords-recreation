@@ -13,6 +13,8 @@ const logoImg = document.getElementById('logo-img');
 const headerLinks = document.querySelector('.header__menu');
 
 btnHamburger.addEventListener('click', () => {
+  header.classList.remove('fade-in-scroll');
+
   // Close hamburger menu
   if (header.classList.contains('open')) {
     header.classList.remove('open');
@@ -57,7 +59,7 @@ const titleOverlay = document.querySelector('.menu__title-card__overlay');
 let lastScroll = window.scrollY;
 
 document.onscroll = function () {
-  // Scroll down
+  // Scroll down -- fade out
   if (lastScroll < window.scrollY) {
     header.classList.remove('fade-in-scroll');
     header.classList.add('fade-out-scroll');
@@ -69,14 +71,14 @@ document.onscroll = function () {
     return;
   }
 
-  // Scroll up
+  // Scroll up -- fade in
   if (lastScroll > window.scrollY) {
     header.classList.remove('fade-out-scroll');
     header.classList.add('fade-in-scroll');
     lastScroll = window.scrollY;
   }
 
-  // Top of the page
+  // Top of the page -- fade in
   if (lastScroll === 0) {
     title.classList.remove('fade-out-scroll');
     title.classList.add('fade-in-scroll');
@@ -84,9 +86,3 @@ document.onscroll = function () {
     titleOverlay.classList.add('fade-in');
   }
 };
-
-// Title card animations
-
-// Title
-
-// Overlay

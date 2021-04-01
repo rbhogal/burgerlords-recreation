@@ -46,6 +46,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
+  }
+
+  &__title {
+    margin: 8.5rem;
   }
 
   & strong {

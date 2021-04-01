@@ -717,6 +717,11 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-align: center;
+}
+
+.menu__title {
+  margin: 8.5rem;
 }
 
 .menu strong {
