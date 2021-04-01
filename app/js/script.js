@@ -49,13 +49,13 @@ btnHamburger.addEventListener('click', () => {
 //////////////////////////////////////////////////////////////
 // SCROLL ANIMATIONS
 
-// Header scroll animations 
+// Header scroll animations
 let lastScroll = window.scrollY;
 
 document.onscroll = function () {
   // Scroll down
   if (lastScroll < window.scrollY) {
-    header.classList.remove('fade-in-scroll')
+    header.classList.remove('fade-in-scroll');
     header.classList.add('fade-out-scroll');
     lastScroll = window.scrollY;
     return;
