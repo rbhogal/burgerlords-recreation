@@ -48,6 +48,14 @@ btnHamburger.addEventListener('click', () => {
 //////////////////////////////////////////////////////////////
 // HEADER LINKS -- ACTIVE
 
+// headerLinks.addEventListener('click', e => {
+//   let activeLink = e.target;
+//   sessionStorage.setItem('activeLinkKey', activeLink);
+
+//   let activeLink = sessionStorage.getItem('activeLinkKey');
+//   console.log(activeLinkKey);
+// });
+
 //////////////////////////////////////////////////////////////
 // SCROLL ANIMATIONS
 
