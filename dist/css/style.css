@@ -48,6 +48,8 @@ h3 {
 }
 
 h4 {
+  font-family: cooper-black-std, serif;
+  font-style: normal;
   color: #333;
   font-size: 1.5rem;
   text-transform: uppercase;
@@ -575,6 +577,13 @@ p {
   margin-top: 5rem;
 }
 
+.menu__content hr {
+  margin: 4rem 0;
+  border: none;
+  height: 1px;
+  background-color: #e6e6e6;
+}
+
 .menu__intro-header {
   font-size: 1.3rem;
 }
@@ -590,13 +599,46 @@ p {
 
 .menu__subheading {
   text-align: center;
-  padding: 3.5rem;
+  padding: 3.5rem 8vw;
   margin: 0;
 }
 
 .menu__the-menu {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1.35fr repeat(2, 1fr);
   grid-template-rows: 1fr;
+  gap: 3rem;
+}
+
+.menu__the-menu h4 {
+  margin: 1rem 0;
+}
+
+.menu__the-menu p {
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.menu__the-menu strong {
+  font-size: 1.3rem;
+}
+
+.menu__the-menu--disclaimer {
+  display: flex;
+  align-items: flex-end;
+}
+
+.menu__posters {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 22vw;
+  gap: 1rem;
+  padding: 1.7rem 0;
+}
+
+.menu__posters img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 /*# sourceMappingURL=style.css.map */
