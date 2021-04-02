@@ -573,7 +573,7 @@ p {
 }
 
 .menu__content {
-  padding: 0 14%;
+  padding: 0 13.5%;
   margin-top: 5rem;
 }
 
@@ -631,7 +631,7 @@ p {
 .menu__posters {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 22vw;
+  grid-template-rows: 23vw;
   gap: 1rem;
   padding: 1.7rem 0;
 }
