@@ -53,12 +53,55 @@
     margin: 8.5rem;
   }
 
+  &__gallery {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 15.5vw;
+    gap: 1rem;
+    padding: 3.5rem 0;
+
+    & img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
   &__content {
-    padding: 0 13%;
+    padding: 0 14%;
     margin-top: 5rem;
   }
 
-  & strong {
+  &__intro-header {
     font-size: 1.3rem;
   }
+
+  & i {
+    font-size: 1.3rem;
+  }
+
+  & h3 {
+    text-align: center;
+    margin: 0;
+
+    // font-size: 2.55208333vw; // for 666px breakpoint
+  }
+
+  &__subheading {
+    text-align: center;
+    padding: 3.5rem;
+    margin: 0;
+  }
+
+  &__the-menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+
+    & strong {
+      
+    }
+  }
+
+  
 }
