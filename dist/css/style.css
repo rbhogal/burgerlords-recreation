@@ -641,4 +641,30 @@ p {
   width: 100%;
   object-fit: cover;
 }
+
+.menu__beer-wine__title-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 18vw;
+  background-color: grey;
+  text-align: center;
+}
+
+.menu__beer-wine__img {
+  grid-area: 1 / 1 / -1 / -1;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 68%;
+}
+
+.menu__beer-wine__header {
+  grid-area: 1 / 1 / -1 / -1;
+  padding: 0;
+  margin: auto;
+  font-size: 9.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+}
 /*# sourceMappingURL=style.css.map */
