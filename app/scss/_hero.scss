@@ -22,7 +22,7 @@
       padding-bottom: 3vw;
       position: relative;
 
-      @media only screen and (max-width: $medium) {
+      @media only screen and (max-width: $bp-medium) {
         padding-left: 5rem;
         padding-right: 5rem;
       }
@@ -34,9 +34,8 @@
     text-shadow: 1px 1px 6rem black;
     transition: all 0.2s ease-in-out;
     font-size: 11rem;
-  
 
-    @media only screen and (max-width: $medium) {
+    @media only screen and (max-width: $bp-medium) {
       font-size: 8.8rem;
     }
 
@@ -50,7 +49,7 @@
       top: 16rem;
       animation: fade-out 0.2s ease-in-out forwards;
 
-      @media only screen and (max-width: $medium) {
+      @media only screen and (max-width: $bp-medium) {
         display: none;
       }
     }
@@ -71,7 +70,7 @@
     text-shadow: 1px 1px 1.2rem black;
     padding: 0 2.5rem;
 
-    @media only screen and (max-width: $medium) {
+    @media only screen and (max-width: $bp-medium) {
       font-size: 1.4rem;
     }
   }

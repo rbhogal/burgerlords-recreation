@@ -309,7 +309,7 @@ p {
   transition: all 300ms ease-in-out;
 }
 
-@media only screen and (max-width: 53.125em) {
+@media only screen and (max-width: 57.3125em) {
   .header__hamburger-menu {
     display: block;
   }
@@ -337,7 +337,7 @@ p {
   max-width: 17rem;
 }
 
-@media only screen and (max-width: 53.125em) {
+@media only screen and (max-width: 57.3125em) {
   .header__logo img {
     max-width: 11rem;
   }
@@ -348,7 +348,7 @@ p {
   font-size: 1.6rem;
 }
 
-@media only screen and (max-width: 53.125em) {
+@media only screen and (max-width: 57.3125em) {
   .header__links {
     display: none;
   }
@@ -391,6 +391,13 @@ p {
   justify-items: center;
 }
 
+@media only screen and (max-width: 40.3125em) {
+  .footer__nav {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+
 .footer__nav em {
   text-transform: uppercase;
   font-weight: bold;
@@ -416,9 +423,24 @@ p {
   padding: 0 1.7rem 1.7rem 1.7rem;
 }
 
+@media only screen and (max-width: 40.3125em) {
+  .footer__nav--chinatown {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    justify-self: center;
+  }
+}
+
 .footer__nav--socials {
   grid-column: 2 / 3;
   grid-row: 1 / -1;
+}
+
+@media only screen and (max-width: 40.3125em) {
+  .footer__nav--socials {
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+  }
 }
 
 .footer__nav--socials a {
@@ -462,6 +484,14 @@ p {
   padding: 0 1.7rem 1.7rem 1.7rem;
 }
 
+@media only screen and (max-width: 40.3125em) {
+  .footer__nav--highland-park {
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
+    justify-self: center;
+  }
+}
+
 .hero {
   background: #ffa91f;
   text-transform: uppercase;
@@ -488,7 +518,7 @@ p {
   position: relative;
 }
 
-@media only screen and (max-width: 53.125em) {
+@media only screen and (max-width: 57.3125em) {
   .hero__content--container {
     padding-left: 5rem;
     padding-right: 5rem;
@@ -502,7 +532,7 @@ p {
   font-size: 11rem;
 }
 
-@media only screen and (max-width: 53.125em) {
+@media only screen and (max-width: 57.3125em) {
   .hero__header {
     font-size: 8.8rem;
   }
@@ -519,7 +549,7 @@ p {
   animation: fade-out 0.2s ease-in-out forwards;
 }
 
-@media only screen and (max-width: 53.125em) {
+@media only screen and (max-width: 57.3125em) {
   .hero__header::after {
     display: none;
   }
@@ -541,7 +571,7 @@ p {
   padding: 0 2.5rem;
 }
 
-@media only screen and (max-width: 53.125em) {
+@media only screen and (max-width: 57.3125em) {
   .hero__subheader {
     font-size: 1.4rem;
   }
@@ -648,6 +678,13 @@ p {
   padding: 3.5rem 0;
 }
 
+@media only screen and (max-width: 40.3125em) {
+  .menu__gallery {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 58vw);
+  }
+}
+
 .menu__gallery img {
   height: 100%;
   width: 100%;
@@ -657,6 +694,13 @@ p {
 .menu__content {
   padding: 0 13.5%;
   margin-top: 5rem;
+}
+
+@media only screen and (max-width: 40.3125em) {
+  .menu__content {
+    padding-left: 5.5%;
+    padding-right: 5.5%;
+  }
 }
 
 .menu__content hr {
@@ -692,8 +736,22 @@ p {
   gap: 3rem;
 }
 
+@media only screen and (max-width: 40.3125em) {
+  .menu__the-menu {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, min-content);
+    gap: 0rem;
+  }
+}
+
 .menu__the-menu h4 {
   margin: 1rem 0;
+}
+
+@media only screen and (max-width: 40.3125em) {
+  .menu__the-menu h4 {
+    margin-top: 3rem;
+  }
 }
 
 .menu__the-menu p {
@@ -716,6 +774,13 @@ p {
   grid-template-rows: 23vw;
   gap: 1rem;
   padding: 1.7rem 0;
+}
+
+@media only screen and (max-width: 40.3125em) {
+  .menu__posters {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
 }
 
 .menu__posters img {
@@ -762,43 +827,16 @@ p {
   letter-spacing: 0.5rem;
 }
 
+@media only screen and (max-width: 57.3125em) {
+  .menu__beer-wine__header {
+    font-size: 4.5rem;
+  }
+}
+
 .menu__beer-wine__subheading {
   text-align: center;
   margin: 2rem 0;
   padding: 1.7rem;
-}
-
-.menu__beer-wine__the-menu__grid-container-wine {
-  grid-column: 1 / 2;
-  grid-row: 1 / -1;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  gap: 1rem;
-}
-
-.menu__beer-wine__the-menu__grid-container-beer {
-  grid-column: 2 / 3;
-  grid-row: 1 / -1;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: min-content 1fr;
-  gap: 1rem;
-}
-
-.menu__beer-wine--sparkling-orange-container {
-  grid-column: 1 / 2;
-  grid-row: 1 / -1;
-}
-
-.menu__beer-wine--white-red-container {
-  grid-column: 2 / 3;
-  grid-row: 1 / -1;
-}
-
-.menu__beer-wine__the-menu--assorted-container {
-  grid-column: 1 / -1;
-  grid-row: 2 / 3;
 }
 
 .menu__beer-wine__the-menu {
@@ -808,9 +846,23 @@ p {
   gap: 1rem;
 }
 
+@media only screen and (max-width: 57.3125em) {
+  .menu__beer-wine__the-menu {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, min-content);
+  }
+}
+
 .menu__beer-wine__the-menu__header--wine {
   grid-row: 1 / -1;
   grid-column: 1 / -1;
+}
+
+@media only screen and (max-width: 57.3125em) {
+  .menu__beer-wine__the-menu__header--wine {
+    grid-row: 1 / 2;
+    grid-column: 1 / -1;
+  }
 }
 
 .menu__beer-wine__the-menu__header--beer {
@@ -826,5 +878,56 @@ p {
 .menu__beer-wine__the-menu p {
   margin-top: 2rem;
   margin-bottom: 0rem;
+}
+
+.menu__beer-wine__the-menu__grid-container-wine {
+  grid-column: 1 / 2;
+  grid-row: 1 / -1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 1rem;
+}
+
+@media only screen and (max-width: 57.3125em) {
+  .menu__beer-wine__the-menu__grid-container-wine {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content repeat(2, 1fr);
+  }
+}
+
+.menu__beer-wine__the-menu__grid-container-beer {
+  grid-column: 2 / 3;
+  grid-row: 1 / -1;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: min-content 1fr;
+  gap: 1rem;
+}
+
+@media only screen and (max-width: 57.3125em) {
+  .menu__beer-wine__the-menu__grid-container-beer {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, min-content);
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+  }
+}
+
+.menu__beer-wine--sparkling-orange-container {
+  grid-column: 1 / 2;
+  grid-row: 1 / -1;
+}
+
+.menu__beer-wine--white-red-container {
+  grid-column: 2 / 3;
+  grid-row: 1 / -1;
+}
+
+.menu__beer-wine__the-menu--assorted-container {
+  grid-column: 1 / -1;
+  grid-row: 2 / 3;
 }
 /*# sourceMappingURL=style.css.map */
