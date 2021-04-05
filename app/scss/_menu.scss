@@ -140,6 +140,10 @@
   }
 
   &__beer-wine {
+
+    & hr {
+      margin: 11rem 0;
+    }
     &__title-card {
       display: grid;
       grid-template-columns: 1fr;
@@ -197,7 +201,7 @@
       // GRID CONTAINER - BEER
       grid-column: 2 / 3;
       grid-row: 1 / -1;
-      
+
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: min-content 1fr;
@@ -238,7 +242,7 @@
       }
 
       & h4 {
-        margin-top: 2rem;
+        margin-top: 3rem;
         margin-bottom: 0;
       }
 

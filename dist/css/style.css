@@ -43,7 +43,7 @@ h3 {
   font-weight: 700;
   font-style: normal;
   text-transform: uppercase;
-  color: #222;
+  color: #222222;
   font-size: 4.9rem;
 }
 
@@ -380,6 +380,88 @@ p {
   text-shadow: 1px 1px 8px black;
 }
 
+.footer {
+  padding: 6vw 11vw;
+}
+
+.footer__nav {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  justify-items: center;
+}
+
+.footer__nav em {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+.footer__nav p {
+  margin: 0;
+  letter-spacing: 0.2px;
+}
+
+.footer__nav h4 {
+  margin-top: 0rem;
+  margin-bottom: 1.7rem;
+}
+
+.footer__nav--chinatown {
+  grid-column: 1 / 2;
+  grid-row: 1 / -1;
+  text-align: center;
+  justify-self: start;
+  padding: 0 1.7rem 1.7rem 1.7rem;
+}
+
+.footer__nav--socials {
+  grid-column: 2 / 3;
+  grid-row: 1 / -1;
+}
+
+.footer__nav--socials a {
+  color: inherit;
+}
+
+.footer__nav--socials-icons {
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  gap: 1.5rem;
+  padding: 1.7rem;
+  color: #222222;
+}
+
+.footer__nav--socials-icons:hover {
+  transition: all 0.2s ease-in-out;
+  color: rgba(34, 34, 34, 0.5);
+}
+
+.footer__nav--socials-icons:hover .fa-instagram:hover {
+  color: #222222;
+  transition: all 0.2s ease-in-out;
+}
+
+.footer__nav--socials-icons:hover .fa-twitter:hover {
+  color: #222222;
+  transition: all 0.2s ease-in-out;
+}
+
+.footer__nav--socials-icons:hover .fa-facebook-f:hover {
+  color: #222222;
+  transition: all 0.2s ease-in-out;
+}
+
+.footer__nav--highland-park {
+  grid-column: 3 / 4;
+  grid-row: 1 / -1;
+  text-align: center;
+  justify-self: end;
+  padding: 0 1.7rem 1.7rem 1.7rem;
+}
+
 .hero {
   background: #ffa91f;
   text-transform: uppercase;
@@ -642,6 +724,10 @@ p {
   object-fit: cover;
 }
 
+.menu__beer-wine hr {
+  margin: 11rem 0;
+}
+
 .menu__beer-wine__title-card {
   display: grid;
   grid-template-columns: 1fr;
@@ -733,7 +819,7 @@ p {
 }
 
 .menu__beer-wine__the-menu h4 {
-  margin-top: 2rem;
+  margin-top: 3rem;
   margin-bottom: 0;
 }
 

@@ -1,0 +1,93 @@
+.footer {
+  padding: 6vw 11vw;
+  &__nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    justify-items: center;
+
+    & em {
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 1.3rem;
+      margin: 0;
+    }
+
+    & p {
+      margin: 0;
+      letter-spacing: 0.2px;
+    }
+
+    & h4 {
+      margin-top: 0rem;
+      margin-bottom: 1.7rem;
+    }
+
+    &--chinatown {
+      grid-column: 1 / 2;
+      grid-row: 1 / -1;
+      text-align: center;
+      justify-self: start;
+      padding: 0 1.7rem 1.7rem 1.7rem;
+    }
+
+    &--socials {
+      grid-column: 2 / 3;
+      grid-row: 1 / -1;
+
+      & a {
+        color: inherit;
+
+        //   .fa-facebook-f a:hover {
+        //       .fa-twitter {
+        //           opacity: 0.5;
+        //       }
+        //   }
+
+        //   &:hover {
+
+        //     .fa-facebook-f {
+        //         opacity: 0.5;
+        //     }
+        //   }
+      }
+
+      &-icons {
+        display: flex;
+        justify-content: center;
+        font-size: 25px;
+        gap: 1.5rem;
+        padding: 1.7rem;
+        color: $dark-grey;
+
+        &:hover {
+          transition: all 0.2s ease-in-out;
+          color: rgba(34, 34, 34, 0.5);
+
+          .fa-instagram:hover {
+            color: rgba(34, 34, 34, 1);
+            transition: all 0.2s ease-in-out;
+          }
+
+          .fa-twitter:hover {
+            color: rgba(34, 34, 34, 1);
+            transition: all 0.2s ease-in-out;
+          }
+
+          .fa-facebook-f:hover {
+            color: rgba(34, 34, 34, 1);
+            transition: all 0.2s ease-in-out;
+          }
+        }
+      }
+    }
+
+    &--highland-park {
+      grid-column: 3 / 4;
+      grid-row: 1 / -1;
+      text-align: center;
+      justify-self: end;
+      padding: 0 1.7rem 1.7rem 1.7rem;
+    }
+  }
+}
