@@ -793,6 +793,13 @@ p {
   margin: 11rem 0;
 }
 
+@media only screen and (max-width: 40.3125em) {
+  .menu__beer-wine hr {
+    margin-bottom: 5rem;
+    margin-top: 9rem;
+  }
+}
+
 .menu__beer-wine__title-card {
   display: grid;
   grid-template-columns: 1fr;
