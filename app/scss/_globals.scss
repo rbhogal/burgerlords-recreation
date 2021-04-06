@@ -9,7 +9,6 @@
 $bp-medium: 57.3125em; // 917px
 $bp-small: 40.3125em; // 645px
 
-
 html {
   font-size: 62.5%; // 62.% = 10px
   box-sizing: border-box;
@@ -25,6 +24,59 @@ body {
 
   &.scroll-lock {
     overflow: hidden;
+  }
+}
+
+.content {
+  padding: 0 13.5%;
+  margin-top: 5rem;
+
+  @media only screen and (max-width: $bp-small) {
+    padding-left: 5.5%;
+    padding-right: 5.5%;
+  }
+
+  & hr {
+    margin: 4rem 0;
+    border: none;
+    height: 1px;
+    background-color: #e6e6e6;
+  }
+}
+
+.button {
+  color: white;
+  background-color: $dark-grey-2;
+  font-size: 1.3rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: normal;
+  text-transform: uppercase;
+  border-radius: 3px;
+  box-shadow: 0 2px 0 0 #1f1f1f;
+  padding: 1.3rem 2.6rem;
+  text-align: center;
+  cursor: pointer;
+  margin: 1.7rem;
+  max-width: 30rem;
+  height: auto;
+  border-width: 0;
+  border: 3px solid $dark-grey-2;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  &:hover {
+    color: $dark-grey-2;
+    background-color: white;
+    // border-color: $dark-grey-2;
+  }
+
+  &:active {
+    transform: translateY(1px);
+    box-shadow: 0 1px 0 0 #1f1f1f;
   }
 }
 
@@ -64,4 +116,3 @@ h4 {
 p {
   font-size: 1.3rem;
 }
-

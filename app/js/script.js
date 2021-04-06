@@ -60,8 +60,8 @@ btnHamburger.addEventListener('click', () => {
 // SCROLL ANIMATIONS
 
 // Selectors
-const title = document.querySelector('.menu__title');
-const titleOverlay = document.querySelector('.menu__title-card__overlay');
+const title = document.querySelector('.title');
+const titleOverlay = document.querySelector('.title-card-overlay');
 
 // Header scroll animations
 let lastScroll = window.scrollY;

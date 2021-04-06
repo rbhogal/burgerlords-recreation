@@ -1,0 +1,61 @@
+.order {
+
+    
+  .content {
+    display: grid;
+    grid-template-columns: [ct-start] 1fr [ct-end hp-start] 1fr [hp-end];
+    grid-template-rows: 1fr;
+    text-align: center;
+    margin-top: 0;
+  }
+
+  //   & h3 {
+  //       font-size: 2.55vw;
+  //       font-weight: bold;
+  //   }
+
+  & img {
+      margin-top: 20rem;
+      max-width: 75%;
+  }
+
+  & h1 {
+    margin: 0;
+  }
+
+  & h3 {
+    margin: 1.7rem;
+  }
+  & b {
+    font-size: 1.3rem;
+  }
+
+  & p {
+    margin: 0;
+  }
+
+  &__address {
+    padding-bottom: 2.9rem;
+  }
+
+  &__button-container {
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+  }
+
+  &__chinatown {
+    grid-column: ct-start / ct-end;
+    grid-row: 1 / -1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__highland-park {
+    grid-column: hp-start / hp-end;
+    grid-row: 1 / -1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

@@ -70,23 +70,6 @@
     }
   }
 
-  &__content {
-    padding: 0 13.5%;
-    margin-top: 5rem;
-
-    @media only screen and (max-width: $bp-small) {
-      padding-left: 5.5%;
-      padding-right: 5.5%;
-    }
-
-    & hr {
-      margin: 4rem 0;
-      border: none;
-      height: 1px;
-      background-color: #e6e6e6;
-    }
-  }
-
   &__intro-header {
     font-size: 1.3rem;
   }
