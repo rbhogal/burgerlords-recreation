@@ -1,0 +1,104 @@
+.newsletter {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 0;
+
+  .content {
+    @media only screen and (max-width: $bp-small) {
+    }
+  }
+
+  .button {
+    max-width: 100%;
+    // padding: 1.3rem auto;
+  }
+
+  &__title-card {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+
+    background-image: url('../../images/burgerlords-newsletter-title-card.jpg');
+    background-size: cover;
+    background-position: center center;
+
+    &__overlay {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.2);
+      z-index: 2;
+      height: 100vh;
+    }
+  }
+
+  &__title__wrapper {
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  &__title {
+    margin: 8.5rem;
+    @media only screen and (max-width: $bp-small) {
+      font-size: 5.5rem;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1.7rem;
+
+    background-color: rgba(0, 0, 0, 0.05);
+
+    & p {
+      opacity: 0.8;
+      margin: 1.7rem 0;
+      letter-spacing: 0.03em;
+    }
+
+    
+
+    &__input-container--email {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      & input {
+        width: 100%;
+        padding: 1em;
+        background-color: white;
+        border: 1px solid rgba(0, 0, 0, 0.12);
+        font-family: inherit;
+        font-size: 1.5rem;
+        line-height: normal;
+        outline: none;
+
+        &::placeholder {
+          color: rgba(0, 0, 0, 0.3);
+        }
+      }
+    }
+  }
+}
