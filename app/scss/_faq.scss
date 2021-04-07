@@ -8,9 +8,11 @@
 
   .content {
     padding: 0 5%;
+
     & img {
       max-width: 100%;
     }
+
     @media only screen and (max-width: $bp-small) {
     }
   }
@@ -81,22 +83,64 @@
     display: grid;
     grid-template-columns: [left-start-cl] 1fr [left-end-cl q-start-cl] 2fr [q-end-cl right-start-cl] 1fr [right-end-cl];
     grid-template-rows: [left-start-row q-start-row right-start-row] 1fr [left-end-row q-end-row right-end-row];
+
+    @media only screen and (max-width: $bp-small) {
+      grid-template-columns: [left-start-cl q-start-cl right-start-cl] 1fr [left-end-cl q-end-cl right-end-cl];
+      grid-template-rows: [left-start-row] min-content [left-end-row q-start-row] min-content [q-end-row right-start-row] min-content [right-end-row];
+    }
+  }
+
+  &__img-1 {
+    padding-top: 8rem;
+
+    @media only screen and (max-width: $bp-small) {
+      padding-top: 0;
+    }
+  }
+  &__img-2 {
+    padding-top: 39rem;
+
+    @media only screen and (max-width: $bp-small) {
+      padding-top: 3.4rem;
+    }
+  }
+  &__img-3 {
+    padding-top: 37rem;
+
+    @media only screen and (max-width: $bp-small) {
+      padding-top: 3.4rem;
+    }
+  }
+  &__img-4 {
+    padding-top: 40rem;
+
+    @media only screen and (max-width: $bp-small) {
+      padding-top: 3.4rem;
+    }
   }
 
   &__pics-left {
     grid-column: left-start-cl / left-end-cl;
     grid-row: left-start-row / left-end-row;
     padding: 0 1.7rem;
+
+    @media only screen and (max-width: $bp-small) {
+      padding: 0;
+    }
   }
   &__questions {
     grid-column: q-start-cl / q-end-cl;
     grid-row: q-start-row / q-end-row;
     padding: 0 1.7rem;
 
+    @media only screen and (max-width: $bp-small) {
+      padding: 0;
+    }
+
     & p {
       letter-spacing: 0.03em;
       margin-top: 0;
-      margin-bottom: 1.7rem;
+      margin-bottom: 3rem;
     }
 
     & em {
@@ -131,5 +175,9 @@
     grid-column: right-start-cl / right-end-cl;
     grid-row: right-start-row / right-end-row;
     padding: 0 1.7rem;
+
+    @media only screen and (max-width: $bp-small) {
+      padding: 0;
+    }
   }
 }

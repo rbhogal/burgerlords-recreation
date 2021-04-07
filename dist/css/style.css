@@ -1472,10 +1472,63 @@ p {
   grid-template-rows: [left-start-row q-start-row right-start-row] 1fr [left-end-row q-end-row right-end-row];
 }
 
+@media only screen and (max-width: 40.3125em) {
+  .faq__grid-container {
+    grid-template-columns: [left-start-cl q-start-cl right-start-cl] 1fr [left-end-cl q-end-cl right-end-cl];
+    grid-template-rows: [left-start-row] min-content [left-end-row q-start-row] min-content [q-end-row right-start-row] min-content [right-end-row];
+  }
+}
+
+.faq__img-1 {
+  padding-top: 8rem;
+}
+
+@media only screen and (max-width: 40.3125em) {
+  .faq__img-1 {
+    padding-top: 0;
+  }
+}
+
+.faq__img-2 {
+  padding-top: 39rem;
+}
+
+@media only screen and (max-width: 40.3125em) {
+  .faq__img-2 {
+    padding-top: 3.4rem;
+  }
+}
+
+.faq__img-3 {
+  padding-top: 37rem;
+}
+
+@media only screen and (max-width: 40.3125em) {
+  .faq__img-3 {
+    padding-top: 3.4rem;
+  }
+}
+
+.faq__img-4 {
+  padding-top: 40rem;
+}
+
+@media only screen and (max-width: 40.3125em) {
+  .faq__img-4 {
+    padding-top: 3.4rem;
+  }
+}
+
 .faq__pics-left {
   grid-column: left-start-cl / left-end-cl;
   grid-row: left-start-row / left-end-row;
   padding: 0 1.7rem;
+}
+
+@media only screen and (max-width: 40.3125em) {
+  .faq__pics-left {
+    padding: 0;
+  }
 }
 
 .faq__questions {
@@ -1484,10 +1537,16 @@ p {
   padding: 0 1.7rem;
 }
 
+@media only screen and (max-width: 40.3125em) {
+  .faq__questions {
+    padding: 0;
+  }
+}
+
 .faq__questions p {
   letter-spacing: 0.03em;
   margin-top: 0;
-  margin-bottom: 1.7rem;
+  margin-bottom: 3rem;
 }
 
 .faq__questions em {
@@ -1521,5 +1580,11 @@ p {
   grid-column: right-start-cl / right-end-cl;
   grid-row: right-start-row / right-end-row;
   padding: 0 1.7rem;
+}
+
+@media only screen and (max-width: 40.3125em) {
+  .faq__pics-right {
+    padding: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */
