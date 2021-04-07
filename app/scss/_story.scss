@@ -1,0 +1,118 @@
+.story {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 0;
+
+  .content {
+    display: grid;
+    grid-template-columns: [staff-start-cl] 1fr [staff-end-cl bio-start-cl] 1.5fr [bio-end-cl press-start-cl] 1fr [press-end-cl];
+    grid-template-rows: [staff-start-row bio-start-row press-start-row] 1fr [staff-end-row bio-end-row press-end-row];
+    text-align: center;
+
+    @media only screen and (max-width: $bp-small) {
+      grid-template-columns: [staff-start-cl bio-start-cl press-start-cl] 1fr [staff-end-cl bio-end-cl press-end-cl];
+      grid-template-rows: [staff-start-row] min-content [staff-end-row bio-start-row] min-content [bio-end-row press-start-row] min-content [press-end-row];
+    }
+  }
+
+  .button {
+    width: 100%;
+    margin: 10rem 0;
+  }
+
+  &__title-card {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+
+    background-image: url('../../images/burgerlords-story-title-card.jpg');
+    background-size: cover;
+    background-position: center center;
+
+    &__overlay {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.2);
+      z-index: 2;
+      height: 100vh;
+    }
+  }
+
+  &__title__wrapper {
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  &__title {
+    margin: 8.5rem;
+  }
+
+  & strong {
+    font-size: 1.3rem;
+  }
+
+  & p {
+    letter-spacing: 0.03em;
+  }
+
+  & a {
+    text-decoration: none;
+    color: #9c9c9c;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      color: inherit;
+    }
+  }
+
+  & h3 {
+    line-height: 1em;
+  }
+
+  &__staff {
+    padding: 15rem 0;
+    grid-column: staff-start-cl / staff-end-cl;
+    grid-row: staff-start-row / staff-end-row;
+  }
+
+  &__bio {
+    grid-column: bio-start-cl / bio-end-cl;
+    grid-row: bio-start-row / bio-end-row;
+
+    &__content {
+      text-align: start;
+    }
+  }
+
+  &__press {
+    padding: 15rem 0;
+    grid-column: press-start-cl / press-end-cl;
+    grid-row: press-start-row / press-end-row;
+  }
+
+  & hr {
+    grid-column: 1 / -1;
+    // grid-row: 1 / -1;
+  }
+}

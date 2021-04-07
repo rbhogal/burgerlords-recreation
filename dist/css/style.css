@@ -1054,4 +1054,122 @@ p {
   grid-column: 1 / -1;
   grid-row: 2 / 3;
 }
+
+.story {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.story .content {
+  display: grid;
+  grid-template-columns: [staff-start-cl] 1fr [staff-end-cl bio-start-cl] 1.5fr [bio-end-cl press-start-cl] 1fr [press-end-cl];
+  grid-template-rows: [staff-start-row bio-start-row press-start-row] 1fr [staff-end-row bio-end-row press-end-row];
+  text-align: center;
+}
+
+@media only screen and (max-width: 40.3125em) {
+  .story .content {
+    grid-template-columns: [staff-start-cl bio-start-cl press-start-cl] 1fr [staff-end-cl bio-end-cl press-end-cl];
+    grid-template-rows: [staff-start-row] min-content [staff-end-row bio-start-row] min-content [bio-end-row press-start-row] min-content [press-end-row];
+  }
+}
+
+.story .button {
+  width: 100%;
+  margin: 10rem 0;
+}
+
+.story__title-card {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  background-image: url("../../images/burgerlords-story-title-card.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+.story__title-card__overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  height: 100vh;
+}
+
+.story__title__wrapper {
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.story__title {
+  margin: 8.5rem;
+}
+
+.story strong {
+  font-size: 1.3rem;
+}
+
+.story p {
+  letter-spacing: 0.03em;
+}
+
+.story a {
+  text-decoration: none;
+  color: #9c9c9c;
+  transition: all 0.2s ease-in-out;
+}
+
+.story a:hover {
+  color: inherit;
+}
+
+.story h3 {
+  line-height: 1em;
+}
+
+.story__staff {
+  padding: 15rem 0;
+  grid-column: staff-start-cl / staff-end-cl;
+  grid-row: staff-start-row / staff-end-row;
+}
+
+.story__bio {
+  grid-column: bio-start-cl / bio-end-cl;
+  grid-row: bio-start-row / bio-end-row;
+}
+
+.story__bio__content {
+  text-align: start;
+}
+
+.story__press {
+  padding: 15rem 0;
+  grid-column: press-start-cl / press-end-cl;
+  grid-row: press-start-row / press-end-row;
+}
+
+.story hr {
+  grid-column: 1 / -1;
+}
 /*# sourceMappingURL=style.css.map */
