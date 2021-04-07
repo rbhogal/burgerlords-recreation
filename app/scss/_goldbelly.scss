@@ -1,4 +1,4 @@
-.newsletter {
+.goldbelly {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -6,8 +6,9 @@
   left: 0;
   z-index: 0;
 
-  .button {
-    max-width: 100%;
+  .content {
+    @media only screen and (max-width: $bp-small) {
+    }
   }
 
   &__title-card {
@@ -20,7 +21,7 @@
     bottom: 0;
     z-index: 1;
 
-    background-image: url('../../images/burgerlords-newsletter-title-card.jpg');
+    background-image: url('../../images/hero-bg-img.jpg');
     background-size: cover;
     background-position: center center;
 
@@ -53,44 +54,11 @@
 
   &__title {
     margin: 8.5rem;
+    max-width: 55%;
+    font-size: 5.5vw;
+
     @media only screen and (max-width: $bp-small) {
       font-size: 5.5rem;
-    }
-  }
-
-  &__form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 1.7rem;
-
-    background-color: rgba(0, 0, 0, 0.05);
-
-    & p {
-      opacity: 0.8;
-      margin: 1.7rem 0;
-      letter-spacing: 0.03em;
-    }
-
-    &__input-container--email {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-
-      & input {
-        width: 100%;
-        padding: 1em;
-        background-color: white;
-        border: 1px solid rgba(0, 0, 0, 0.12);
-        font-family: inherit;
-        font-size: 1.5rem;
-        line-height: normal;
-        outline: none;
-
-        &::placeholder {
-          color: rgba(0, 0, 0, 0.3);
-        }
-      }
     }
   }
 }

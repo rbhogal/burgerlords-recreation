@@ -76,16 +76,6 @@
     letter-spacing: 0.03em;
   }
 
-  & a {
-    text-decoration: none;
-    color: #9c9c9c;
-    transition: all 0.2s ease-in-out;
-
-    &:hover {
-      color: inherit;
-    }
-  }
-
   & h3 {
     line-height: 1em;
   }
@@ -109,6 +99,16 @@
     padding: 15rem 0;
     grid-column: press-start-cl / press-end-cl;
     grid-row: press-start-row / press-end-row;
+
+    & a {
+      text-decoration: none;
+      color: #9c9c9c;
+      transition: all 0.2s ease-in-out;
+  
+      &:hover {
+        color: inherit;
+      }
+    }
   }
 
   & hr {

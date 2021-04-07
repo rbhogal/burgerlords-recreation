@@ -1134,16 +1134,6 @@ p {
   letter-spacing: 0.03em;
 }
 
-.story a {
-  text-decoration: none;
-  color: #9c9c9c;
-  transition: all 0.2s ease-in-out;
-}
-
-.story a:hover {
-  color: inherit;
-}
-
 .story h3 {
   line-height: 1em;
 }
@@ -1167,6 +1157,16 @@ p {
   padding: 15rem 0;
   grid-column: press-start-cl / press-end-cl;
   grid-row: press-start-row / press-end-row;
+}
+
+.story__press a {
+  text-decoration: none;
+  color: #9c9c9c;
+  transition: all 0.2s ease-in-out;
+}
+
+.story__press a:hover {
+  color: inherit;
 }
 
 .story hr {
@@ -1268,5 +1268,65 @@ p {
 
 .newsletter__form__input-container--email input::placeholder {
   color: rgba(0, 0, 0, 0.3);
+}
+
+.goldbelly {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.goldbelly__title-card {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  background-image: url("../../images/hero-bg-img.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+.goldbelly__title-card__overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  height: 100vh;
+}
+
+.goldbelly__title__wrapper {
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.goldbelly__title {
+  margin: 8.5rem;
+  max-width: 55%;
+  font-size: 5.5vw;
+}
+
+@media only screen and (max-width: 40.3125em) {
+  .goldbelly__title {
+    font-size: 5.5rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
