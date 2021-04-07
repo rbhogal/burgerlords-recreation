@@ -11,6 +11,7 @@
     grid-template-columns: [staff-start-cl] 1fr [staff-end-cl bio-start-cl] 1.5fr [bio-end-cl press-start-cl] 1fr [press-end-cl];
     grid-template-rows: [staff-start-row bio-start-row press-start-row] 1fr [staff-end-row bio-end-row press-end-row];
     text-align: center;
+    padding: 3vw;
 
     @media only screen and (max-width: $bp-small) {
       grid-template-columns: [staff-start-cl bio-start-cl press-start-cl] 1fr [staff-end-cl bio-end-cl press-end-cl];
@@ -78,25 +79,43 @@
 
   & h3 {
     line-height: 1em;
+    font-size: 2.55208333vw;
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: 1.7rem;
+    }
   }
 
   &__staff {
-    padding: 15rem 0;
+    padding: 15rem 1.7rem;
     grid-column: staff-start-cl / staff-end-cl;
     grid-row: staff-start-row / staff-end-row;
+
+    // @media only screen and (max-width: $bp-medium) {
+    //   padding: 15rem 0;
+    // }
+
+    @media only screen and (max-width: $bp-small) {
+      padding: 15rem 0;
+    }
   }
 
   &__bio {
+    padding: 0 1.7rem;
     grid-column: bio-start-cl / bio-end-cl;
     grid-row: bio-start-row / bio-end-row;
 
     &__content {
       text-align: start;
     }
+
+    @media only screen and (max-width: $bp-small) {
+      padding: 0;
+    }
   }
 
   &__press {
-    padding: 15rem 0;
+    padding: 15rem 1.7rem;
     grid-column: press-start-cl / press-end-cl;
     grid-row: press-start-row / press-end-row;
 
@@ -104,10 +123,14 @@
       text-decoration: none;
       color: #9c9c9c;
       transition: all 0.2s ease-in-out;
-  
+
       &:hover {
         color: inherit;
       }
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      padding: 15rem 0;
     }
   }
 

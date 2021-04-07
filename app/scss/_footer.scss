@@ -10,6 +10,7 @@
     @media only screen and (max-width: $bp-small) {
       grid-template-columns: 1fr;
       grid-template-rows: repeat(3, 1fr);
+      align-items: center;
     }
 
     & em {
