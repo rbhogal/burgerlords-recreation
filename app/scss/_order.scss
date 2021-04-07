@@ -1,12 +1,19 @@
 .order {
-
-    
   .content {
     display: grid;
-    grid-template-columns: [ct-start] 1fr [ct-end hp-start] 1fr [hp-end];
-    grid-template-rows: 1fr;
+    grid-template-columns: [ct-start-cl] 1fr [ct-end-cl hp-start-cl] 1fr [hp-end-cl];
+    grid-template-rows: [ct-start-row hp-start-row] 1fr [ct-end-row hp-end-row];
     text-align: center;
     margin-top: 0;
+
+    @media only screen and (max-width: $bp-small) {
+      grid-template-columns: [ct-start-cl hp-start-cl] 1fr [ct-end-cl hp-end-cl];
+      grid-template-rows: [ct-start-row] min-content [ct-end-row hp-start-row] min-content [hp-end-row];
+    
+      .button {
+        font-size: 1.2rem;
+      }
+    }
   }
 
   //   & h3 {
@@ -14,10 +21,6 @@
   //       font-weight: bold;
   //   }
 
-  & img {
-      margin-top: 20rem;
-      max-width: 75%;
-  }
 
   & h1 {
     margin: 0;
@@ -25,6 +28,12 @@
 
   & h3 {
     margin: 1.7rem;
+    font-size: 2.55vw;
+    font-weight: bold;
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: 4.9rem;
+    }
   }
   & b {
     font-size: 1.3rem;
@@ -44,18 +53,32 @@
   }
 
   &__chinatown {
-    grid-column: ct-start / ct-end;
-    grid-row: 1 / -1;
+    grid-column: ct-start-cl / ct-end-cl;
+    grid-row: ct-start-row / ct-end-row;
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    & img {
+      margin-top: 12rem;
+      max-width: 65%;
+    }
   }
 
   &__highland-park {
-    grid-column: hp-start / hp-end;
-    grid-row: 1 / -1;
+    grid-column: hp-start-cl / hp-end-cl;
+    grid-row: hp-start-row / hp-end-row;
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    & img {
+      margin-top: 12rem;
+      max-width: 65%;
+
+      @media only screen and (max-width: $bp-small) {
+        margin-top: 0rem;
+      }
+    }
   }
 }

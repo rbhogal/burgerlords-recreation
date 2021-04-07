@@ -59,6 +59,10 @@ btnHamburger.addEventListener('click', () => {
 //////////////////////////////////////////////////////////////
 // SCROLL ANIMATIONS
 
+// Selectors
+const title = document.querySelector('.title');
+const titleOverlay = document.querySelector('.title-card-overlay');
+
 // Header scroll animations
 let lastScroll = window.scrollY;
 
@@ -67,6 +71,10 @@ document.onscroll = function () {
   if (lastScroll < window.scrollY) {
     header.classList.remove('fade-in-scroll');
     header.classList.add('fade-out-scroll');
+    title.classList.remove('fade-in-scroll');
+    title.classList.add('fade-out-scroll');
+    titleOverlay.classList.remove('fade-in');
+    titleOverlay.classList.add('fade-out');
     lastScroll = window.scrollY;
     return;
   }
@@ -76,5 +84,13 @@ document.onscroll = function () {
     header.classList.remove('fade-out-scroll');
     header.classList.add('fade-in-scroll');
     lastScroll = window.scrollY;
+  }
+
+  // Top of the page -- fade in
+  if (lastScroll === 0) {
+    title.classList.remove('fade-out-scroll');
+    title.classList.add('fade-in-scroll');
+    titleOverlay.classList.remove('fade-out');
+    titleOverlay.classList.add('fade-in');
   }
 };
