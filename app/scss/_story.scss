@@ -11,11 +11,30 @@
     grid-template-columns: [staff-start-cl] 1fr [staff-end-cl bio-start-cl] 1.5fr [bio-end-cl press-start-cl] 1fr [press-end-cl];
     grid-template-rows: [staff-start-row bio-start-row press-start-row] 1fr [staff-end-row bio-end-row press-end-row];
     text-align: center;
-    padding: 3vw;
+    padding: 0 13.5%;
 
     @media only screen and (max-width: $bp-small) {
       grid-template-columns: [staff-start-cl bio-start-cl press-start-cl] 1fr [staff-end-cl bio-end-cl press-end-cl];
       grid-template-rows: [staff-start-row] min-content [staff-end-row bio-start-row] min-content [bio-end-row press-start-row] min-content [press-end-row];
+      padding: 3vw;
+    }
+
+    & strong {
+      font-size: 1.3rem;
+    }
+  
+    & p {
+      letter-spacing: 0.03em;
+      padding: 1rem 0;
+    }
+  
+    & h3 {
+      line-height: 1em;
+      font-size: 2.55208333vw;
+  
+      @media only screen and (max-width: $bp-small) {
+        font-size: 1.7rem;
+      }
     }
   }
 
@@ -69,22 +88,7 @@
     margin: 8.5rem;
   }
 
-  & strong {
-    font-size: 1.3rem;
-  }
-
-  & p {
-    letter-spacing: 0.03em;
-  }
-
-  & h3 {
-    line-height: 1em;
-    font-size: 2.55208333vw;
-
-    @media only screen and (max-width: $bp-small) {
-      font-size: 1.7rem;
-    }
-  }
+  
 
   &__staff {
     padding: 15rem 1.7rem;
@@ -101,7 +105,7 @@
   }
 
   &__bio {
-    padding: 0 1.7rem;
+    padding: 0 3rem;
     grid-column: bio-start-cl / bio-end-cl;
     grid-row: bio-start-row / bio-end-row;
 
