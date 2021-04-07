@@ -1,0 +1,135 @@
+.faq {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 0;
+
+  .content {
+    padding: 0 5%;
+    & img {
+      max-width: 100%;
+    }
+    @media only screen and (max-width: $bp-small) {
+    }
+  }
+
+  .button {
+    padding: 2.1rem 3.4rem;
+    letter-spacing: 0.4em;
+    font-family: calluna, serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.5rem;
+  }
+
+  &__title-card {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+
+    background-image: url('../../images/burgerlords-faq-title-card.jpg');
+    background-size: cover;
+    background-position: center center;
+
+    &__overlay {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.2);
+      z-index: 2;
+      height: 100vh;
+    }
+  }
+
+  &__title__wrapper {
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  &__title {
+    margin: 8.5rem;
+    max-width: 55%;
+    font-size: 5.5vw;
+    max-width: 60%;
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: 4rem;
+      max-width: 70%;
+    }
+  }
+
+  &__grid-container {
+    display: grid;
+    grid-template-columns: [left-start-cl] 1fr [left-end-cl q-start-cl] 2fr [q-end-cl right-start-cl] 1fr [right-end-cl];
+    grid-template-rows: [left-start-row q-start-row right-start-row] 1fr [left-end-row q-end-row right-end-row];
+  }
+
+  &__pics-left {
+    grid-column: left-start-cl / left-end-cl;
+    grid-row: left-start-row / left-end-row;
+    padding: 0 1.7rem;
+  }
+  &__questions {
+    grid-column: q-start-cl / q-end-cl;
+    grid-row: q-start-row / q-end-row;
+    padding: 0 1.7rem;
+
+    & p {
+      letter-spacing: 0.03em;
+      margin-top: 0;
+      margin-bottom: 1.7rem;
+    }
+
+    & em {
+      font-size: 1.3rem;
+    }
+
+    & strong {
+      font-size: 1.3rem;
+      margin: 0;
+    }
+
+    & a {
+      color: #9c9c9c;
+
+      &:hover {
+        color: black;
+      }
+    }
+
+    &--covid-update {
+      padding-top: 2rem;
+
+      display: flex;
+      flex-direction: column;
+
+      &--date {
+        align-self: flex-end;
+      }
+    }
+  }
+  &__pics-right {
+    grid-column: right-start-cl / right-end-cl;
+    grid-row: right-start-row / right-end-row;
+    padding: 0 1.7rem;
+  }
+}

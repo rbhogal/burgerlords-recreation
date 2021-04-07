@@ -7,15 +7,13 @@
   z-index: 0;
 
   .content {
-    @media only screen and (max-width: $bp-small) {
-    }
-
+    
     & h4 {
       max-width: 50%;
       text-align: center;
 
       @media only screen and (max-width: $bp-small) {
-      max-width: 95%;
+        max-width: 95%;
       }
     }
   }
