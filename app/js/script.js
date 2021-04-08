@@ -40,7 +40,7 @@ btnHamburger.addEventListener('click', () => {
 
   logo.classList.add('fade-in-menu');
 
-  logoImg.src = '';
+  logoImg.src = ''; 
   logoImg.src = '../images/burgerlords_oval_white.png';
 
   headerLinks.classList.add('fade-in-links');
