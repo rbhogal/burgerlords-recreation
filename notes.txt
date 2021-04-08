@@ -1,3 +1,0 @@
-menu title js > when scrolled all the way to top bring back title, when scroll down take it away
-
-for the header > whenever you scroll down then disappear, whenever you scroll up bring it back
