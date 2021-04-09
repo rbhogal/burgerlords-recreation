@@ -10,7 +10,8 @@ const btnHamburger = document.querySelector('.header__hamburger-menu');
 const overlay = document.querySelector('.header__overlay');
 const logo = document.querySelector('.header__logo');
 const logoImg = document.getElementById('logo-img');
-const headerLinks = document.querySelector('.header__menu');
+const hamburgerMenu = document.querySelector('.header__menu');
+const headerLinks = document.querySelector('.header__links');
 
 btnHamburger.addEventListener('click', () => {
   header.classList.remove('fade-in-scroll');
@@ -25,8 +26,8 @@ btnHamburger.addEventListener('click', () => {
     logo.classList.remove('fade-in-home');
     logoImg.src = '';
     logoImg.src = '../images/burgerlords_oval.png';
-    headerLinks.classList.remove('fade-in-links');
-    headerLinks.classList.add('fade-out-links');
+    hamburgerMenu.classList.remove('fade-in-links');
+    hamburgerMenu.classList.add('fade-out-links');
 
     return;
   }
@@ -43,17 +44,27 @@ btnHamburger.addEventListener('click', () => {
   logoImg.src = '';
   logoImg.src = '../images/burgerlords_oval_white.png';
 
-  headerLinks.classList.add('fade-in-links');
-  headerLinks.classList.remove('fade-out-links');
+  hamburgerMenu.classList.add('fade-in-links');
+  hamburgerMenu.classList.remove('fade-out-links');
 });
 
 //////////////////////////////////////////////////////////////
 // HEADER LINKS -- ACTIVE
 
-// headerLinks.addEventListener('click', e => {
-//   let activeLink = e.target;
-//   sessionStorage.setItem('activeLinkKey', activeLink);
+// const [Menu, Goldbelly, Story, Gallery, FAQ, Newsletter] = links;
+// Get the active links values from storage and set classes
 
+// convert that string to idk class... stuff
+
+// add the appropriate class to active link
+
+// headerLinks.addEventListener('click', e => {
+// let activeLink = e.target.textContent;
+
+// set value of active header link in storage
+// sessionStorage.setItem('Header Link', e.target.textContent);
+
+// set the class
 //   let activeLink = sessionStorage.getItem('activeLinkKey');
 //   console.log(activeLinkKey);
 // });

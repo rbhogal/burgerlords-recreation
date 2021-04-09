@@ -10,7 +10,7 @@ const btnHamburger = document.querySelector('.header__hamburger-menu');
 const overlay = document.querySelector('.header__overlay');
 const logo = document.querySelector('.header__logo');
 const logoImg = document.getElementById('logo-img');
-const headerLinks = document.querySelector('.header__menu');
+const hamburgerMenu = document.querySelector('.header__menu');
 
 btnHamburger.addEventListener('click', () => {
   header.classList.remove('fade-in-scroll');
@@ -25,8 +25,8 @@ btnHamburger.addEventListener('click', () => {
     logo.classList.remove('fade-in-home');
     logoImg.src = '';
     logoImg.src = '../images/burgerlords_oval.png';
-    headerLinks.classList.remove('fade-in-links');
-    headerLinks.classList.add('fade-out-links');
+    hamburgerMenu.classList.remove('fade-in-links');
+    hamburgerMenu.classList.add('fade-out-links');
 
     return;
   }
@@ -40,22 +40,23 @@ btnHamburger.addEventListener('click', () => {
 
   logo.classList.add('fade-in-menu');
 
-  logoImg.src = ''; 
+  logoImg.src = '';
   logoImg.src = '../images/burgerlords_oval_white.png';
 
-  headerLinks.classList.add('fade-in-links');
-  headerLinks.classList.remove('fade-out-links');
+  hamburgerMenu.classList.add('fade-in-links');
+  hamburgerMenu.classList.remove('fade-out-links');
 });
 
 //////////////////////////////////////////////////////////////
 // HEADER LINKS -- ACTIVE
 
-// headerLinks.addEventListener('click', e => {
-//   let activeLink = e.target;
-//   sessionStorage.setItem('activeLinkKey', activeLink);
+// hamburgerMenu.addEventListener('click', e => {
+// let activeLink = e.target;
+// console.log(activeLink);
+// sessionStorage.setItem('activeLinkKey', 'value');
 
-//   let activeLink = sessionStorage.getItem('activeLinkKey');
-//   console.log(activeLinkKey);
+// let activeLink = sessionStorage.getItem('activeLinkKey');
+// console.log(activeLinkKey);
 // });
 
 //////////////////////////////////////////////////////////////
