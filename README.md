@@ -34,8 +34,8 @@ A pixel-perfect recreation of the LA restaurant Burgerlords' landing page. With 
 * Javascript
 
 ### Features
-* 8 fully responsive pages
-* Reveal header on scroll
-* Custom hover animation over text (for order now) using javascript
-* CSS keyframe animations
-* Photo gallery
+* 8 Fully Responsive Pages
+* Reveal Header On Scroll
+* Custom Hover Animation Over Text (Order Now) Using javascript
+* CSS Keyframe Animations
+* Photo Gallery
