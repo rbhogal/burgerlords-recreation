@@ -6,7 +6,7 @@
 <h3 align="center">Burgerlords</h3>
 
   <p align="center">
-    Restauarnt Landing Page
+    Restauarnt Website
     <br />
     <br />
     <a href="https://rbhogal.github.io/burgerlords-recreation/dist">View Site</a>
