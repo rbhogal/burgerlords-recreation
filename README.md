@@ -26,7 +26,7 @@
 <br />
 <br />
 
-A pixel-perfect recreation of the LA restaurant Burgerlords' landing page. With slight improvements where I saw. (Their original site has since changed).
+A pixel-perfect recreation of the LA restaurant Burgerlords' website (8 pages). With slight improvements where I saw. (Their original site has since changed).
 
 ### Built With
 * HTML
