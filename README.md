@@ -44,7 +44,7 @@ A pixel-perfect recreation of the LA restaurant Burgerlords' website (8 pages). 
 
 - [ ] Background image flickering on initial loading of the page
 
-See the [open issues](https://github.com/rbhogal/get-fit-app/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/rbhogal/burgerlords-recreation/issues) for a full list of proposed features (and known issues).
 
 
 <!--     - [ ] Nested Feature -->
