@@ -39,3 +39,9 @@ A pixel-perfect recreation of the LA restaurant Burgerlords' website (8 pages). 
 * Custom Hover Animation Over Text (Order Now) Using javascript
 * CSS Keyframe Animations
 * Photo Gallery
+
+## Issues That Need Fixing
+
+- [ ] Background imager flickering on initial loading of the page
+
+<!--     - [ ] Nested Feature -->
