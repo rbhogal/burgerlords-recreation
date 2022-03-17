@@ -42,6 +42,6 @@ A pixel-perfect recreation of the LA restaurant Burgerlords' website (8 pages). 
 
 ## Issues That Need Fixing
 
-- [ ] Background imager flickering on initial loading of the page
+- [ ] Background image flickering on initial loading of the page
 
 <!--     - [ ] Nested Feature -->
